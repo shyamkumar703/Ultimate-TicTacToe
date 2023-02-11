@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EEAF2929981B600095F94E /* Ultimate_TTTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF2829981B600095F94E /* Ultimate_TTTApp.swift */; };
+		01EEAF2B29981B600095F94E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF2A29981B600095F94E /* ContentView.swift */; };
+		01EEAF2D29981B610095F94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EEAF2C29981B610095F94E /* Assets.xcassets */; };
+		01EEAF3029981B610095F94E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EEAF2F29981B610095F94E /* Preview Assets.xcassets */; };
+		01EEAF3A29981B610095F94E /* Ultimate_TTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF3929981B610095F94E /* Ultimate_TTTTests.swift */; };
+		01EEAF4429981B610095F94E /* Ultimate_TTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF4329981B610095F94E /* Ultimate_TTTUITests.swift */; };
+		01EEAF4629981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF4529981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01EEAF3629981B610095F94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EEAF1D29981B600095F94E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EEAF2429981B600095F94E;
+			remoteInfo = "Ultimate-TTT";
+		};
+		01EEAF4029981B610095F94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EEAF1D29981B600095F94E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EEAF2429981B600095F94E;
+			remoteInfo = "Ultimate-TTT";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01EEAF2529981B600095F94E /* Ultimate-TTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate-TTT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EEAF2829981B600095F94E /* Ultimate_TTTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_TTTApp.swift; sourceTree = "<group>"; };
+		01EEAF2A29981B600095F94E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01EEAF2C29981B610095F94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01EEAF2F29981B610095F94E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01EEAF3529981B610095F94E /* Ultimate-TTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ultimate-TTTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EEAF3929981B610095F94E /* Ultimate_TTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_TTTTests.swift; sourceTree = "<group>"; };
+		01EEAF3F29981B610095F94E /* Ultimate-TTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ultimate-TTTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EEAF4329981B610095F94E /* Ultimate_TTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_TTTUITests.swift; sourceTree = "<group>"; };
+		01EEAF4529981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_TTTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01EEAF2229981B600095F94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EEAF3229981B610095F94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EEAF3C29981B610095F94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01EEAF1C29981B600095F94E = {
+			isa = PBXGroup;
+			children = (
+				01EEAF2729981B600095F94E /* Ultimate-TTT */,
+				01EEAF3829981B610095F94E /* Ultimate-TTTTests */,
+				01EEAF4229981B610095F94E /* Ultimate-TTTUITests */,
+				01EEAF2629981B600095F94E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01EEAF2629981B600095F94E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01EEAF2529981B600095F94E /* Ultimate-TTT.app */,
+				01EEAF3529981B610095F94E /* Ultimate-TTTTests.xctest */,
+				01EEAF3F29981B610095F94E /* Ultimate-TTTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01EEAF2729981B600095F94E /* Ultimate-TTT */ = {
+			isa = PBXGroup;
+			children = (
+				01EEAF2829981B600095F94E /* Ultimate_TTTApp.swift */,
+				01EEAF2A29981B600095F94E /* ContentView.swift */,
+				01EEAF2C29981B610095F94E /* Assets.xcassets */,
+				01EEAF2E29981B610095F94E /* Preview Content */,
+			);
+			path = "Ultimate-TTT";
+			sourceTree = "<group>";
+		};
+		01EEAF2E29981B610095F94E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				01EEAF2F29981B610095F94E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01EEAF3829981B610095F94E /* Ultimate-TTTTests */ = {
+			isa = PBXGroup;
+			children = (
+				01EEAF3929981B610095F94E /* Ultimate_TTTTests.swift */,
+			);
+			path = "Ultimate-TTTTests";
+			sourceTree = "<group>";
+		};
+		01EEAF4229981B610095F94E /* Ultimate-TTTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01EEAF4329981B610095F94E /* Ultimate_TTTUITests.swift */,
+				01EEAF4529981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift */,
+			);
+			path = "Ultimate-TTTUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01EEAF2429981B600095F94E /* Ultimate-TTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EEAF4929981B610095F94E /* Build configuration list for PBXNativeTarget "Ultimate-TTT" */;
+			buildPhases = (
+				01EEAF2129981B600095F94E /* Sources */,
+				01EEAF2229981B600095F94E /* Frameworks */,
+				01EEAF2329981B600095F94E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ultimate-TTT";
+			productName = "Ultimate-TTT";
+			productReference = 01EEAF2529981B600095F94E /* Ultimate-TTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01EEAF3429981B610095F94E /* Ultimate-TTTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EEAF4C29981B610095F94E /* Build configuration list for PBXNativeTarget "Ultimate-TTTTests" */;
+			buildPhases = (
+				01EEAF3129981B610095F94E /* Sources */,
+				01EEAF3229981B610095F94E /* Frameworks */,
+				01EEAF3329981B610095F94E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01EEAF3729981B610095F94E /* PBXTargetDependency */,
+			);
+			name = "Ultimate-TTTTests";
+			productName = "Ultimate-TTTTests";
+			productReference = 01EEAF3529981B610095F94E /* Ultimate-TTTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01EEAF3E29981B610095F94E /* Ultimate-TTTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EEAF4F29981B610095F94E /* Build configuration list for PBXNativeTarget "Ultimate-TTTUITests" */;
+			buildPhases = (
+				01EEAF3B29981B610095F94E /* Sources */,
+				01EEAF3C29981B610095F94E /* Frameworks */,
+				01EEAF3D29981B610095F94E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01EEAF4129981B610095F94E /* PBXTargetDependency */,
+			);
+			name = "Ultimate-TTTUITests";
+			productName = "Ultimate-TTTUITests";
+			productReference = 01EEAF3F29981B610095F94E /* Ultimate-TTTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01EEAF1D29981B600095F94E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					01EEAF2429981B600095F94E = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					01EEAF3429981B610095F94E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 01EEAF2429981B600095F94E;
+					};
+					01EEAF3E29981B610095F94E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 01EEAF2429981B600095F94E;
+					};
+				};
+			};
+			buildConfigurationList = 01EEAF2029981B600095F94E /* Build configuration list for PBXProject "Ultimate-TTT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01EEAF1C29981B600095F94E;
+			productRefGroup = 01EEAF2629981B600095F94E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01EEAF2429981B600095F94E /* Ultimate-TTT */,
+				01EEAF3429981B610095F94E /* Ultimate-TTTTests */,
+				01EEAF3E29981B610095F94E /* Ultimate-TTTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01EEAF2329981B600095F94E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EEAF3029981B610095F94E /* Preview Assets.xcassets in Resources */,
+				01EEAF2D29981B610095F94E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EEAF3329981B610095F94E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EEAF3D29981B610095F94E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01EEAF2129981B600095F94E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EEAF2B29981B600095F94E /* ContentView.swift in Sources */,
+				01EEAF2929981B600095F94E /* Ultimate_TTTApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EEAF3129981B610095F94E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EEAF3A29981B610095F94E /* Ultimate_TTTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EEAF3B29981B610095F94E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EEAF4629981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift in Sources */,
+				01EEAF4429981B610095F94E /* Ultimate_TTTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01EEAF3729981B610095F94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EEAF2429981B600095F94E /* Ultimate-TTT */;
+			targetProxy = 01EEAF3629981B610095F94E /* PBXContainerItemProxy */;
+		};
+		01EEAF4129981B610095F94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EEAF2429981B600095F94E /* Ultimate-TTT */;
+			targetProxy = 01EEAF4029981B610095F94E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01EEAF4729981B610095F94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01EEAF4829981B610095F94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01EEAF4A29981B610095F94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ultimate-TTT/Preview Content\"";
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shyamkumar.Ultimate-TTT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01EEAF4B29981B610095F94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ultimate-TTT/Preview Content\"";
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shyamkumar.Ultimate-TTT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01EEAF4D29981B610095F94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shyamkumar.Ultimate-TTTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ultimate-TTT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ultimate-TTT";
+			};
+			name = Debug;
+		};
+		01EEAF4E29981B610095F94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shyamkumar.Ultimate-TTTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ultimate-TTT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ultimate-TTT";
+			};
+			name = Release;
+		};
+		01EEAF5029981B610095F94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shyamkumar.Ultimate-TTTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ultimate-TTT";
+			};
+			name = Debug;
+		};
+		01EEAF5129981B610095F94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shyamkumar.Ultimate-TTTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ultimate-TTT";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01EEAF2029981B600095F94E /* Build configuration list for PBXProject "Ultimate-TTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EEAF4729981B610095F94E /* Debug */,
+				01EEAF4829981B610095F94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EEAF4929981B610095F94E /* Build configuration list for PBXNativeTarget "Ultimate-TTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EEAF4A29981B610095F94E /* Debug */,
+				01EEAF4B29981B610095F94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EEAF4C29981B610095F94E /* Build configuration list for PBXNativeTarget "Ultimate-TTTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EEAF4D29981B610095F94E /* Debug */,
+				01EEAF4E29981B610095F94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EEAF4F29981B610095F94E /* Build configuration list for PBXNativeTarget "Ultimate-TTTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EEAF5029981B610095F94E /* Debug */,
+				01EEAF5129981B610095F94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01EEAF1D29981B600095F94E /* Project object */;
+}
