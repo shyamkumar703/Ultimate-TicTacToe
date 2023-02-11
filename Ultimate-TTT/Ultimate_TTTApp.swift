@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Ultimate_TTTApp: App {
+    @StateObject var gameManager = GameManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(gameManager)
         }
     }
 }

@@ -14,6 +14,10 @@
 		01EEAF3A29981B610095F94E /* Ultimate_TTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF3929981B610095F94E /* Ultimate_TTTTests.swift */; };
 		01EEAF4429981B610095F94E /* Ultimate_TTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF4329981B610095F94E /* Ultimate_TTTUITests.swift */; };
 		01EEAF4629981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF4529981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift */; };
+		01EEAF5429981B7E0095F94E /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF5329981B7E0095F94E /* Spot.swift */; };
+		01EEAF5629981D000095F94E /* SmallBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF5529981D000095F94E /* SmallBoard.swift */; };
+		01EEAF5829981D420095F94E /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF5729981D420095F94E /* Board.swift */; };
+		01EEAF5A299820AC0095F94E /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF59299820AC0095F94E /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		01EEAF3F29981B610095F94E /* Ultimate-TTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ultimate-TTTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EEAF4329981B610095F94E /* Ultimate_TTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_TTTUITests.swift; sourceTree = "<group>"; };
 		01EEAF4529981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_TTTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01EEAF5329981B7E0095F94E /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		01EEAF5529981D000095F94E /* SmallBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallBoard.swift; sourceTree = "<group>"; };
+		01EEAF5729981D420095F94E /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		01EEAF59299820AC0095F94E /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,8 @@
 			children = (
 				01EEAF2829981B600095F94E /* Ultimate_TTTApp.swift */,
 				01EEAF2A29981B600095F94E /* ContentView.swift */,
+				01EEAF59299820AC0095F94E /* GameManager.swift */,
+				01EEAF5229981B6E0095F94E /* Components */,
 				01EEAF2C29981B610095F94E /* Assets.xcassets */,
 				01EEAF2E29981B610095F94E /* Preview Content */,
 			);
@@ -125,6 +135,16 @@
 				01EEAF4529981B610095F94E /* Ultimate_TTTUITestsLaunchTests.swift */,
 			);
 			path = "Ultimate-TTTUITests";
+			sourceTree = "<group>";
+		};
+		01EEAF5229981B6E0095F94E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				01EEAF5329981B7E0095F94E /* Spot.swift */,
+				01EEAF5529981D000095F94E /* SmallBoard.swift */,
+				01EEAF5729981D420095F94E /* Board.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EEAF5629981D000095F94E /* SmallBoard.swift in Sources */,
+				01EEAF5A299820AC0095F94E /* GameManager.swift in Sources */,
 				01EEAF2B29981B600095F94E /* ContentView.swift in Sources */,
+				01EEAF5829981D420095F94E /* Board.swift in Sources */,
+				01EEAF5429981B7E0095F94E /* Spot.swift in Sources */,
 				01EEAF2929981B600095F94E /* Ultimate_TTTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
