@@ -22,6 +22,7 @@ struct SmallBoard: View {
             case .inProgress(let state): constructBoard(from: state)
             case .green(let state): constructBoard(from: state)
             case .red(let state): constructBoard(from: state)
+            case .draw(let state): constructBoard(from: state)
             }
         }
     }
@@ -34,6 +35,8 @@ struct SmallBoard: View {
         case .red(let state):
             return constructBoard(from: state)
         case .green(let state):
+            return constructBoard(from: state)
+        case .draw(let state):
             return constructBoard(from: state)
         }
     }

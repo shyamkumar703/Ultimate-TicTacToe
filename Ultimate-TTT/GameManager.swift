@@ -19,11 +19,14 @@ enum SmallBoardState {
     case inProgress([[SpotState]])
     case red([[SpotState]]) // small board won by red
     case green([[SpotState]]) // small board won by green
+    case draw([[SpotState]])
     
     func isEqual(to state: SmallBoardState) -> Bool {
         switch (self, state) {
         case (.red, .red): return true
         case (.green, .green): return true
+        case (.draw, .draw): return true
+        case (.inProgress, .inProgress): return true
         default: return false
         }
     }
@@ -33,11 +36,25 @@ enum GameState {
     case inProgress([[SmallBoardState]])
     case red([[SmallBoardState]]) // game won by red
     case green([[SmallBoardState]]) // game won by green
+    case draw([[SmallBoardState]])
+    
+    func isEqual(to state: GameState) -> Bool {
+        switch (self, state) {
+        case (.red, .red): return true
+        case (.green, .green): return true
+        case (.draw, .draw): return true
+        case (.inProgress, .inProgress): return true
+        default: return false
+        }
+    }
 }
 
 class GameManager: ObservableObject {
     @Published var gameState: GameState
     var isUserTurn: Bool = true
+    var isGameOver: Bool {
+        gameState.isEqual(to: .red([])) || gameState.isEqual(to: .green([])) || gameState.isEqual(to: .draw([]))
+    }
     
     init() {
         // construct starting gameState
@@ -50,6 +67,19 @@ class GameManager: ObservableObject {
         }
         
         gameState = .inProgress(state)
+    }
+    
+    func reset() {
+        var state = [[SmallBoardState]]()
+        for _ in 0..<3 {
+            state.append([])
+            for _ in 0..<3 {
+                state[state.count - 1].append(.inProgress(Self.generateEmptySmallBoardState()))
+            }
+        }
+        
+        gameState = .inProgress(state)
+        isUserTurn = true
     }
     
     private static func generateEmptySmallBoardState() -> [[SpotState]] {
@@ -118,10 +148,34 @@ class GameManager: ObservableObject {
         }
     }
     
+    private func setDrawStateForSmallBoardAt(x: Int, y: Int) {
+        switch gameState {
+        case .inProgress(var state):
+            let currentSmallBoardState = state[x][y]
+            switch currentSmallBoardState {
+            case .inProgress(let spotStates):
+                state[x][y] = .draw(spotStates)
+                gameState = .inProgress(state)
+            default: return
+            }
+        default: return
+        }
+    }
+    
     // MARK: - Game mechanics
-    func handleUserTap(at index: SpotIndex) {
+    enum Player {
+        case user
+        case ai
+    }
+    
+    func handleMove(at index: SpotIndex, by player: Player) {
         // TODO: Change state accordingly, check for win/loss, call AI
-        guard isUserTurn else { return }
+        guard !isGameOver else { return }
+        if player == .user {
+            guard isUserTurn else { return }
+        } else {
+            guard !isUserTurn else { return }
+        }
         switch gameState {
         case .inProgress(var state):
             let smallBoard = state[index.smallBoardIndexX][index.smallBoardIndexY]
@@ -130,8 +184,7 @@ class GameManager: ObservableObject {
                 let spot = spotStates[index.spotIndexX][index.spotIndexY]
                 switch spot {
                 case .empty:
-                    // something
-                    spotStates[index.spotIndexX][index.spotIndexY] = .green
+                    spotStates[index.spotIndexX][index.spotIndexY] = player == .user ? .green : .red
                     state[index.smallBoardIndexX][index.smallBoardIndexY] = .inProgress(spotStates)
                     DispatchQueue.main.async { [weak self] in
                         withAnimation {
@@ -139,6 +192,15 @@ class GameManager: ObservableObject {
                             self.gameState = .inProgress(state)
                             if self.checkForSmallBoardWin(gameState: state, x: index.smallBoardIndexX, y: index.smallBoardIndexY) {
                                 self.checkForGameWin()
+                            }
+                            self.isUserTurn.toggle()
+                            if !self.isGameOver && player == .user {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                    switch self.gameState {
+                                    case .inProgress(let state): self.handleMove(at: AI.computeMove(currentState: state), by: .ai)
+                                    default: return
+                                    }
+                                }
                             }
                         }
                     }
@@ -153,8 +215,8 @@ class GameManager: ObservableObject {
         }
     }
     
-    private func reduce(_ spotStates: [SpotState], matching: SpotState) -> Bool {
-        return spotStates.map({ $0 == .green ? 1 : 0 }).reduce(0, +) == 3
+    private func reduce(_ spotStates: [SpotState], matching state: SpotState) -> Bool {
+        return spotStates.map({ $0 == state ? 1 : 0 }).reduce(0, +) == 3
     }
     
     private func checkForSmallBoardWin(gameState: [[SmallBoardState]], x: Int, y: Int) -> Bool {
@@ -214,6 +276,11 @@ class GameManager: ObservableObject {
             if reduce([(0, 2), (1, 1), (2, 0)].map({ spotStates[$0.0][$0.1] }), matching: .red) {
                 // red wins this small board
                 setWinStateForSmallBoardAt(x: x, y: y, for: .red)
+                return true
+            }
+            
+            if spotStates.flatMap({ $0 }).filter({ $0 == .empty }).count == 0 {
+                setDrawStateForSmallBoardAt(x: x, y: y)
                 return true
             }
             
@@ -283,6 +350,11 @@ class GameManager: ObservableObject {
             if reduce([(0, 2), (1, 1), (2, 0)].map({ state[$0.0][$0.1] }), matching: .red([])) {
                 // green wins the game
                 setWinState(for: .red)
+                return
+            }
+            
+            if state.flatMap({ $0 }).filter({ $0.isEqual(to: .inProgress([])) }).isEmpty {
+                gameState = .draw(state)
                 return
             }
             

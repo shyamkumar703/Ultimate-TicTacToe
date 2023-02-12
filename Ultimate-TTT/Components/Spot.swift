@@ -24,12 +24,12 @@ struct Spot: View {
         switch gameManager.gameState {
         case .green: return .green
         case .red: return .red
-        case .inProgress(let state):
+        case .inProgress(let state), .draw(let state):
             let smallBoardState = state[spotIndex.smallBoardIndexX][spotIndex.smallBoardIndexY]
             switch smallBoardState {
             case .red: return .red
             case .green: return .green
-            case .inProgress(let state):
+            case .inProgress(let state), .draw(let state):
                 let spotState = state[spotIndex.spotIndexX][spotIndex.spotIndexY]
                 switch spotState {
                 case .red: return .red
@@ -46,7 +46,7 @@ struct Spot: View {
             .cornerRadius(8)
             .foregroundColor(foregroundColor)
             .onTapGesture {
-                gameManager.handleUserTap(at: spotIndex)
+                gameManager.handleMove(at: spotIndex, by: .user)
             }
     }
 }

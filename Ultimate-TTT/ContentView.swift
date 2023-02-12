@@ -9,10 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var gameManager: GameManager
+    var navigationTitle: String {
+        switch gameManager.gameState {
+        case .inProgress: return "In progress"
+        case .draw: return "Draw"
+        case .green: return "User wins"
+        case .red: return "AI wins"
+        }
+    }
     
     var body: some View {
-        Board()
-            .environmentObject(gameManager)
+        NavigationView {
+            Board()
+                .environmentObject(gameManager)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("Reset") {
+                            withAnimation {
+                                gameManager.reset()
+                            }
+                        }
+                    }
+                    
+                }
+                .navigationTitle(navigationTitle)
+        }
     }
 }
 

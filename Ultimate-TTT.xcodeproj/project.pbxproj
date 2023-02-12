@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01494B9B2998608D00207E08 /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01494B9A2998608D00207E08 /* AI.swift */; };
 		01EEAF2929981B600095F94E /* Ultimate_TTTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF2829981B600095F94E /* Ultimate_TTTApp.swift */; };
 		01EEAF2B29981B600095F94E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEAF2A29981B600095F94E /* ContentView.swift */; };
 		01EEAF2D29981B610095F94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EEAF2C29981B610095F94E /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01494B9A2998608D00207E08 /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		01EEAF2529981B600095F94E /* Ultimate-TTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate-TTT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EEAF2829981B600095F94E /* Ultimate_TTTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_TTTApp.swift; sourceTree = "<group>"; };
 		01EEAF2A29981B600095F94E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				01EEAF2829981B600095F94E /* Ultimate_TTTApp.swift */,
 				01EEAF2A29981B600095F94E /* ContentView.swift */,
 				01EEAF59299820AC0095F94E /* GameManager.swift */,
+				01494B9A2998608D00207E08 /* AI.swift */,
 				01EEAF5229981B6E0095F94E /* Components */,
 				01EEAF2C29981B610095F94E /* Assets.xcassets */,
 				01EEAF2E29981B610095F94E /* Preview Content */,
@@ -281,6 +284,7 @@
 				01EEAF5A299820AC0095F94E /* GameManager.swift in Sources */,
 				01EEAF2B29981B600095F94E /* ContentView.swift in Sources */,
 				01EEAF5829981D420095F94E /* Board.swift in Sources */,
+				01494B9B2998608D00207E08 /* AI.swift in Sources */,
 				01EEAF5429981B7E0095F94E /* Spot.swift in Sources */,
 				01EEAF2929981B600095F94E /* Ultimate_TTTApp.swift in Sources */,
 			);
